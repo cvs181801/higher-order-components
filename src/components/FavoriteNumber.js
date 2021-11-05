@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function FavoriteNumber(props) {
-    render (
+export default function FavoriteNumber() {
+    return (
     <div>
-    <h1>{props.randomNum}</h1>
+    <h1>something</h1>
     </div>
     )
 }
