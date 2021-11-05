@@ -1,12 +1,14 @@
 import React from 'react'
 
-export default function FavoriteNumber() {
+function FavoriteNumber(props) {
+    console.log(props)
     return (
-    <div>
-    <h1>something</h1>
-    </div>
+    <h1>Hello, {props.randomNum}</h1>
     )
 }
+
+export default FavoriteNumber
+
 
 
 
