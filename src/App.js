@@ -2,7 +2,7 @@ import './App.css';
 import React, {Component} from 'react'
 import FavoriteNumber from './components/FavoriteNumber';
 import {WithNumberGenerator} from './components/WithNumberGenerator';
-//import Favorite from './components/Favorite'
+import Favorite from './components/Favorite'
 
 const EnhancedNumber = WithNumberGenerator(FavoriteNumber)
 
@@ -23,9 +23,11 @@ class App extends Component {
       return (
         <div className="App">
           <EnhancedNumber />
-          <h1 
-            onClick={this.handleClick}
-          > Yo! </h1>
+          <Favorite 
+            render={food => {
+              return <h1>{food}</h1>
+            }}
+          />
         
         </div>
       )
