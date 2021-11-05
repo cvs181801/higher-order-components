@@ -23,12 +23,7 @@ class App extends Component {
       return (
         <div className="App">
           <EnhancedNumber />
-          <Favorite 
-            render={food => {
-              return <h1>{food}</h1>
-            }}
-          />
-        
+          <Favorite/>
         </div>
       )
     }

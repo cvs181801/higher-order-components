@@ -1,9 +1,18 @@
-import React from 'react'
+import React, {Component} from 'react'
+import {Toggler} from "./Components/Toggler"
 
-export default function Favorite(props) {
+function Favorite(props) {
     return (
-        <div>
-            {props.render("hamburger")}
-        </div>
+        <Toggler render={function(on, toggle) {
+            return (
+                <div>
+                    <h2>Click to favorite!</h2>
+                </div>
+            )
+                    
+        }}/>
+        
     )
 }
+
+export default Favorite
