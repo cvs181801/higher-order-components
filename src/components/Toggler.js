@@ -1,10 +1,24 @@
 import React, {Component} from 'react'
+import Favorite from './Favorite'
 
+class Toggler extends Component {
+    state = {
+        on: this.props.defaultOnValue
+    }
 
-export default function Toggler() {
-    return (
-        <div>
-            Hi
-        </div>
-    )
+    toggle() {
+        this.setState(prevState => {
+            return {on: !prevState.on}
+        })
+    }
+
+    render() {
+        return (
+            <div>
+                {this.props.render(this.state.on, this.toggle)}
+            </div>
+        )
+    }
 }
+
+export default Toggler

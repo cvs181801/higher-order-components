@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Toggler} from "./Components/Toggler"
+import Toggler from './Toggler'
 
 function Favorite(props) {
     return (
@@ -15,6 +15,7 @@ function Favorite(props) {
                 </div>
             )         
         }}/>
+        
         
     )
 }

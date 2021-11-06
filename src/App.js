@@ -3,6 +3,7 @@ import React, {Component} from 'react'
 import FavoriteNumber from './components/FavoriteNumber';
 import {WithNumberGenerator} from './components/WithNumberGenerator';
 import Favorite from './components/Favorite'
+//import Toggler from './components/Toggler'
 
 const EnhancedNumber = WithNumberGenerator(FavoriteNumber)
 
