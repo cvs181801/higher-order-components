@@ -7,9 +7,13 @@ function Favorite(props) {
             return (
                 <div>
                     <h2>Click to favorite!</h2>
+                    <h1><span onClick={toggle}
+                    >
+                        {on ? "❤️" : "♡"} 
+                        </span>
+                    </h1>
                 </div>
-            )
-                    
+            )         
         }}/>
         
     )
