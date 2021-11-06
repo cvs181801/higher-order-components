@@ -3,7 +3,7 @@ import React, {Component} from 'react'
 import FavoriteNumber from './components/FavoriteNumber';
 import {WithNumberGenerator} from './components/WithNumberGenerator';
 import Favorite from './components/Favorite'
-//import Toggler from './components/Toggler'
+import Menu from './components/Menu'
 
 const EnhancedNumber = WithNumberGenerator(FavoriteNumber)
 
@@ -25,6 +25,9 @@ class App extends Component {
         <div className="App">
           <EnhancedNumber />
           <Favorite/>
+          <Favorite/>
+          <Favorite/>
+          <Menu/>
         </div>
       )
     }

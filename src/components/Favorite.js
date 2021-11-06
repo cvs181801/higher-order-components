@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import Toggler from './Toggler'
 
-function Favorite(props) {
+function Favorite() {
     return (
-        <Toggler render={function(on, toggle) {
-            return (
+        <Toggler render={
+            (on, toggle) => (
                 <div>
                     <h2>Click to favorite!</h2>
                     <h1><span onClick={toggle}
@@ -14,9 +14,7 @@ function Favorite(props) {
                     </h1>
                 </div>
             )         
-        }}/>
-        
-        
+        }/>
     )
 }
 

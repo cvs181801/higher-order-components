@@ -6,7 +6,7 @@ class Toggler extends Component {
         on: this.props.defaultOnValue
     }
 
-    toggle() {
+    toggle = ()=> { // why this syntax rather than toggle() ? 
         this.setState(prevState => {
             return {on: !prevState.on}
         })
