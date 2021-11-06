@@ -5,13 +5,13 @@ function Menu() {
 
     const menu = `Trout with gruyere asparagus, Cordon Bleu with scalloped potatoes, or stuffed eggplant with spinach and feta`;
     return (
-            <Toggler render={
+            <Toggler defaultOnValue={true} render={
                 (on, toggle) => (
                     <div>
                         <button
                             onClick={toggle}
                         >menu</button>
-                            {on ? menu : "hidden"}     
+                            {on ? menu : "show menu"}     
                     </div>
                 )         
             }/>
